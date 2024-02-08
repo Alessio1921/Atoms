@@ -1,0 +1,100 @@
+.headerTop{
+  height: 48px;
+  @media (max-width: 600px) {
+    margin-top: 40px;
+    & div{
+      width: 100%;
+      height: 100%;
+      & div:first-child{
+        border-right: 1px solid black;
+      }
+      & div{
+        height: 100%;
+        border-top: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  @media (min-width: 600px) {
+    div div{
+      margin-left: 40px;
+    }
+    div:last-child{
+      margin-right: 40px;
+      svg{
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.menu, .search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 96px;
+  min-width: 96px;
+  height: 96px;
+}
+.selectNav{
+  border-bottom: 6px solid #FF2C33 !important;
+}
+.navItem{
+  margin-left: 15px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+
+}
+.cardNavBar{
+  box-shadow: -2px 2px 0px 0px #000000;
+  border: 1px solid #000000;
+  padding: 12px 16px 12px 16px;
+  border-radius: 4px;
+}
+.actualNav{
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 10px;
+  svg{
+    margin-left: 10px;
+  }
+
+}
+.navbarContainer{
+  padding: 0 20px 0 20px !important;
+}
+.activeView{
+  box-shadow: -2px 2px 0px 0px #000000;
+  border: 1px solid #000000;
+  border-radius: 4px;
+
+}
+.iconView{
+  div{
+    margin-left: 5px;
+    svg{
+      height: 25px;
+      width: 25px;
+    }
+  }
+  
+}
+// Home
+.containerText{
+  position: absolute;
+  bottom: 0;
+}
+.tagContainer{
+  padding: 4px 12px 4px 12px;
+  border-radius: 4px;
+  border: 1px;
+  background-color: white;
+  width: max-content;
+}
